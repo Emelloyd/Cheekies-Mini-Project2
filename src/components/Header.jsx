@@ -5,7 +5,7 @@ const menus = [
     {label:"Menu", path: '/menu'},
     {label:"About", path: '/about'},
     {label:"Contact Us", path: '/contact-us'},
-    {label:"Book A Party", path: '/bookaparty'},
+    {label:"Book A Party", path: '/bookaparty'}
 ];
 const searchtab = [
   {label:"Login", path: '/Login'},
@@ -14,7 +14,7 @@ const searchtab = [
 
 function Header () {
   return (
-    <div className="header">
+    <div className="navbar">
       <div className="app-header-logo"><img src="cheekies.png"/></div>
       <nav>
       <ul className="main-menu">
