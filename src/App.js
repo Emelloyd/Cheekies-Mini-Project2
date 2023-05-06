@@ -34,7 +34,6 @@ function App() {
 
         <Route path="bookaparty" 
         element={<BookParty />}/>
-
         
         <Route path="search" 
         element={<Search />}/>
