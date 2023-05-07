@@ -11,6 +11,7 @@ import BookParty from './pages/BookParty';
 import Login from './pages/Login';
 import Error404 from './Error404';
 import Search from './pages/Search';
+import { Navbar } from 'react-bootstrap';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
 
         <Route path="bookaparty" 
         element={<BookParty />}/>
+
         
         <Route path="search" 
         element={<Search />}/>
