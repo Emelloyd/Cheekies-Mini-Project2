@@ -12,6 +12,7 @@ import Login from './pages/Login';
 import Error404 from './Error404';
 import Search from './pages/Search';
 import { Navbar } from 'react-bootstrap';
+import FeaturedProducts from './pages/FeaturedProducts/FeaturedProducts';
 
 function App() {
   return (
@@ -36,6 +37,8 @@ function App() {
         <Route path="bookaparty" 
         element={<BookParty />}/>
 
+        <Route path="featuredproducts" 
+        element={<FeaturedProducts />}/>
         
         <Route path="search" 
         element={<Search />}/>

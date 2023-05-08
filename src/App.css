@@ -14,6 +14,17 @@
   display: flex;
   color: white;
 }
+
+.app-header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.app-header-logo img {
+    width: 175px;
+    margin-left: -15px;
+  }
+
 .footer{
   height: 5rem;
   display: flex;
@@ -31,9 +42,34 @@
   list-style: none;
 }
 
+.main-menu ul{
+  list-style-type: none;
+}
+
 .main-menu a{
   text-decoration: none;
   color: white;
   margin-left: 20px;
   font-size: 20px;
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 0;
+  padding: 5px;
+}
+.content img{
+  flex: 1 1 400px;
+  width: 90%;
+}
+p {
+  line-height: 2;
+  max-width: 45em;
+  margin-bottom: 2rem;
+  color: red;
+  font-size: 1rem;
 }

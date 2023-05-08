@@ -9,33 +9,27 @@ const menus = [
     {label:"Book A Party", path: '/bookaparty'},
 
 ];
-const searchtab = [
-  {label:"Login", path: '/Login'},
-  {label:"Search", path: '/Search'}
-];
+
 
 function Header () {
   return (
     <div className="navbar navbar-expand-lg bg-white shadow py-3 sticky-top">
       <div className="container">
-      <div className="app-header-logo"><img src="cheekies.png" width={180}/>
+      <div className="app-header-logo">
+          <Link to='/'>
+          <img 
+          className="header-logo"
+          src = " cheekies.png " 
+          />
+          </Link>
       </div>
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <nav>
-      <ul className="main-menu">
-        {menus.map((item)=><li>
-        <Link to={item.path}>{item.label}</Link>
-        </li>)}
-      </ul>
-      </nav>
-      <div className="login">
-        {searchtab.map((item)=><li>
-        <Link to={item.path}>{item.label}</Link>
-        </li>)}
-      </div>
+        <div>
+        <ul className="main-menu">
+          {menus.map((item)=><li>
+          <Link to={item.path}>{item.label}</Link>
+          </li>)}
+        </ul>
+        </div>
       </div>
     </div>
   )

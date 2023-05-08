@@ -1,11 +1,15 @@
-function Footer(){
+import React from 'react'
+
+const Footer = () => {
   return (
-  <>
-  <div className="footer">
-      <h3>Footer Section</h3>
+    <div className='container footer'>
+      <h5>
+        &copy; {new Date().getFullYear()}
+        <span> Cheekies </span>
+      </h5>
+      <h5>All rights reserved</h5>
     </div>
-  </>
-  );
+  )
 }
 
 export default Footer;

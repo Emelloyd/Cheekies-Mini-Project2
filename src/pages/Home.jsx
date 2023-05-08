@@ -3,23 +3,26 @@ import "./Carousel/PizzaCarousel";
 import { Link } from "react-router-dom";
 
 
+
 const Home = () => {
   return (
+    <>
     <Carousel>
-      <Carousel.Item className="carousel-all carousel-item-one">
-        <div className="col-lg-6 text-center text-lg-end overflow-hidden">
+    <Carousel.Item className="carousel-all carousel-item-one">
+      <div className="homepage">
         <img 
         className="img-fluid"
-        src="./asset/img/bgpizza.png"
+        src="./assets/img/bgpizza.png"
         alt="pizzafloat"
         />
         </div>
         <Carousel.Caption>
-        <section>
-        <div  className="cd-intro" col-lg-6 text-center text-lg-end overflow-hidden>
-          <h3>The best quality ingredients</h3>
+        <section className="cd-intro">
+        <div className="content">
+          <h1>The best <br/>
+          quality ingredients</h1>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          <Link href="" class="btn btn-danger py-sm-3 px-sm-5 me-3 animated slideInLeft">ORDER NOW!</Link>
+          <Link to='/menu' className="btn btn-danger">ORDER NOW!</Link>
           </div>
           </section>
         </Carousel.Caption>
@@ -29,38 +32,44 @@ const Home = () => {
       <div className="col-lg-6 text-center text-lg-end overflow-hidden">
         <img 
         className="img-fluid"
-        src="./asset/img/bgpizza3.png"
+        src="./assets/img/bgpizza3.png"
         alt="pizzafloat2"
         />
         </div>
         <Carousel.Caption>
-          <h1 cd-headline rotate1 display-3 text-white animated slideInLeft>Enjoy Our Delicious Meal</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <Link href="" class="btn btn-danger py-sm-3 px-sm-5 me-3 animated slideInLeft">ORDER NOW!</Link>
+        <section className="cd-intro">
+        <div className="content">
+          <h1>The best <br/>
+          quality ingredients</h1>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <Link to='/menu' className="btn btn-danger">ORDER NOW!</Link>
+          </div>
+          </section>
         </Carousel.Caption>
         <div className="hero-shadow"></div>
       </Carousel.Item>
       <Carousel.Item className="carousel-all carousel-item-three">
-        <div className="col-lg-6 text-center text-lg-end overflow-hidden">
+      <div className="col-lg-6 text-center text-lg-end overflow-hidden">
         <img 
         className="img-fluid"
-        src="./asset/img/bgpizza2.png"
+        src="./assets/img/bgpizza2.png"
         alt="pizzafloat"
         />
         </div>
         <Carousel.Caption>
-        <section>
-        <div  className="cd-intro" col-lg-6 text-center text-lg-end overflow-hidden>
-          <h3>The best quality ingredients</h3>
+        <section className="cd-intro">
+        <div className="content">
+          <h1>Where Pizza <br/>Happen?</h1>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          <Link href="" class="btn btn-danger py-sm-3 px-sm-5 me-3 animated slideInLeft">ORDER NOW!</Link>
+          <Link to='/menu' className="btn btn-danger">ORDER NOW!</Link>
           </div>
           </section>
         </Carousel.Caption>
         <div className="hero-shadow"></div>
       </Carousel.Item>
     </Carousel>
-
+    </>
+   
   );
 };
 
