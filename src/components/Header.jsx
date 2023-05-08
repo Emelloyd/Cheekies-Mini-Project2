@@ -6,13 +6,14 @@ const menus = [
     {label:"Menu", path: '/menu'},
     {label:"About", path: '/about'},
     {label:"Contact Us", path: '/contact-us'},
-    {label:"Book A Party", path: '/bookaparty'},
+    {label:"Book A Party", path: '/bookaparty'}
 
 ];
 
 
 function Header () {
   return (
+
     <div className="navbar navbar-expand-lg bg-white shadow py-3 sticky-top">
       <div className="container">
       <div className="app-header-logo">
