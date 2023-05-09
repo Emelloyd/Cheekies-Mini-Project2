@@ -2,8 +2,9 @@ import React from 'react'
 
 const FeaturedProducts = () => {
   return (
-    <div>
-      <h1>Featured Products</h1>
+    <div className='title'>
+      <h2>Featured Products</h2>
+      <div className='underline'></div>
     </div>
   )
 }

@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
-
+import React, { Component } from 'react';
+import Proptypes from 'prop-types';
+import { Menu, Icon, } from 'semantic-ui-react';
+import { formatPrice } from '../helpers';
 
 const menus = [
     {label:"Home", path: '/'},
@@ -9,9 +12,13 @@ const menus = [
     {label:"Book A Party", path: '/bookaparty'}
 
 ];
+class Header extends Component {
 
+  static propTypes = {
+    orderTotal: Proptypes.number
+  }
 
-function Header () {
+render () {
   return (
 
     <div className="navbar navbar-expand-lg bg-white shadow py-3 sticky-top">
@@ -19,8 +26,9 @@ function Header () {
       <div className="app-header-logo">
           <Link to='/'>
           <img 
-          className="header-logo"
-          src = " cheekies.png " 
+          className="navbar-brand p-0"
+          src = "cheekies.png"
+          alt="pizza"
           />
           </Link>
       </div>
@@ -31,9 +39,18 @@ function Header () {
           </li>)}
         </ul>
         </div>
+  
+      <div>
+        <Menu.Item id='navbar-total' position='right'>
+            <Icon name='cart'/>
+            {formatPrice(this.props.orderTotal)}
+            {this.props.children}
+        </Menu.Item>
+      </div>
       </div>
     </div>
   )
+}
 }
 
 export default Header
