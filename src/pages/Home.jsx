@@ -9,7 +9,7 @@ const Home = () => {
     <>
     <Carousel>
     <Carousel.Item className="carousel-all carousel-item-one">
-    <div className="col-lg-6 text-center text-lg-end overflow-hidden">
+    <div className="col-lg-12 text-center text-lg-end overflow-hidden">
         <img 
         className="img-fluid"
         src="./assets/img/bgpizza.png"

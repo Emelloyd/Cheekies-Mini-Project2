@@ -12,7 +12,7 @@ const menus = [
     {label:"Book A Party", path: '/bookaparty'}
 
 ];
-class Header extends Component {
+class NavBar extends Component {
 
   static propTypes = {
     orderTotal: Proptypes.number
@@ -41,11 +41,15 @@ render () {
         </div>
   
       <div>
+        <Menu fixed="top" borderless id ='navbar'>
+        <div className="container">
         <Menu.Item id='navbar-total' position='right'>
             <Icon name='cart'/>
             {formatPrice(this.props.orderTotal)}
             {this.props.children}
         </Menu.Item>
+        </div>
+        </Menu>
       </div>
       </div>
     </div>
@@ -53,4 +57,4 @@ render () {
 }
 }
 
-export default Header
+export default NavBar
