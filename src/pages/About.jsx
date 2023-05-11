@@ -1,32 +1,55 @@
 import React from 'react'
-
+import { Row,Col } from 'react-bootstrap'
 
 const About = () => {
   return (
-    <main>
-      <div title='about' />
-      <div className='page section section-center'>
-        <img src= "/assets/img/slice-crispy-pizza.jpg" alt='pizza' />
-        <article>
-          <div className='title'>
-            <h2>our story</h2>
-            <div className='underline'></div>
-          </div>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
-            accusantium sapiente tempora sed dolore esse deserunt eaque
-            excepturi, delectus error accusamus vel eligendi, omnis beatae.
-            Quisquam, dicta. Eos quod quisquam esse recusandae vitae neque
-            dolore, obcaecati incidunt sequi blanditiis est exercitationem
-            molestiae delectus saepe odio eligendi modi porro eaque in libero
-            minus unde sapiente consectetur architecto. Ullam rerum, nemo iste
-            ex, eaque perspiciatis nisi, eum totam velit saepe sed quos
-            similique amet. Ex, voluptate accusamus nesciunt totam vitae esse
-            iste.
-          </p>
-        </article>
+    <>
+      <div Style={{marginTop: '50px'}}>
+        <h1>OUR STORY</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Quidem a repellendus expedita dignissimos quam eum nobis, 
+          voluptatibus, eaque aperiam magni quasi voluptate ex quae, 
+          beatae ducimus aut! Corrupti, fuga optio.</p>
+          <h1>OUR SPECIALTY</h1>
+      <Row>
+        <Col md={6}>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Ipsa accusantium ipsam distinctio sint reprehenderit asperiores 
+            qui expedita delectus ut dolores tempore, dolor assumenda magni 
+            perferendis libero minima possimus fugit? Veniam!</p>
+        </Col>
+        <Col md={6}>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Ipsa accusantium ipsam distinctio sint reprehenderit asperiores 
+            qui expedita delectus ut dolores tempore, dolor assumenda magni 
+            perferendis libero minima possimus fugit? Veniam!</p>
+        </Col>
+      </Row>
+      <Row>
+        <h1>Our Chief</h1>
+        <Col md={3}>Lorem ipsum dolor sit amet consectetur, 
+        adipisicing elit. Illum aliquid reiciendis, cupiditate dicta sit,
+        dolore eum at exercitationem, impedit minus voluptatibus ratione 
+        ullam eligendi magni hic distinctio fuga itaque similique!
+        </Col>
+        <Col md={3}>Lorem ipsum dolor sit amet consectetur, 
+        adipisicing elit. Illum aliquid reiciendis, cupiditate dicta sit,
+        dolore eum at exercitationem, impedit minus voluptatibus ratione 
+        ullam eligendi magni hic distinctio fuga itaque similique!
+        </Col>
+        <Col md={3}>Lorem ipsum dolor sit amet consectetur, 
+        adipisicing elit. Illum aliquid reiciendis, cupiditate dicta sit,
+        dolore eum at exercitationem, impedit minus voluptatibus ratione 
+        ullam eligendi magni hic distinctio fuga itaque similique!
+        </Col>
+        <Col md={3}>Lorem ipsum dolor sit amet consectetur, 
+        adipisicing elit. Illum aliquid reiciendis, cupiditate dicta sit,
+        dolore eum at exercitationem, impedit minus voluptatibus ratione 
+        ullam eligendi magni hic distinctio fuga itaque similique!
+        </Col>
+      </Row>
       </div>
-    </main>
+    </>
   )
 }
 

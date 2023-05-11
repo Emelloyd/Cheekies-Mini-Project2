@@ -31,7 +31,7 @@ body {
   height: 80px;
   align-items: center;
   display: flex;
-  color: white;
+  color: black;
 }
 
 .app-header-logo {
@@ -95,10 +95,6 @@ body {
   line-height: 1;
 }
 
-@media screen and (max-width: 650px) {
-  width: 100%;
-}
-
 .content img{
   flex: 1 1 400px;
   width: 90%;
@@ -106,3 +102,14 @@ body {
 .img-fluid{
   display: flex;
 }
+.ContactForm {
+  background-color: #a70b25;
+  border-radius: 10px;
+}
+  .contact-background-image {
+    background-image: url("./assets/pizza3.jpg");
+    width: 100%;
+    padding: 50px 0 50px 0;
+    height: 100vh;
+    background-size: 100% 
+  }

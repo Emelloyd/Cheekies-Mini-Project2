@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import React, { Component } from 'react';
 import Proptypes from 'prop-types';
-import { Menu, Icon, } from 'semantic-ui-react';
+import { Menu } from 'semantic-ui-react';
 import { formatPrice } from '../helpers';
+import {FaPizzaSlice} from 'react-icons/fa';
 
 const menus = [
     {label:"Home", path: '/'},
@@ -44,7 +45,7 @@ render () {
         <Menu fixed="top" borderless id ='navbar'>
         <div className="container">
         <Menu.Item id='navbar-total' position='right'>
-            <Icon name='cart'/>
+            <FaPizzaSlice className='cart'/>
             {formatPrice(this.props.orderTotal)}
             {this.props.children}
         </Menu.Item>

@@ -1,5 +1,5 @@
 import Carousel from "react-bootstrap/Carousel";
-import "./Carousel/PizzaCarousel";
+import "./Carousel/PizzaCarousel.css";
 import { Link } from "react-router-dom";
 import FeaturedProducts from './FeaturedProducts/FeaturedProducts'
 
@@ -7,15 +7,15 @@ import FeaturedProducts from './FeaturedProducts/FeaturedProducts'
 const Home = () => {
   return (
     <>
-    <Carousel>
+    <Carousel className="carousel slide" id="heroSlider" data-bs-ride="carousel">
     <Carousel.Item className="carousel-all carousel-item-one">
-    <div className="col-lg-12 text-center text-lg-end overflow-hidden">
-        <img 
+    <img 
         className="img-fluid"
         src="./assets/img/bgpizza.png"
         alt="pizzafloat"
         />
-        </div>
+    <div className="col-lg-12 text-center text-lg-end overflow-hidden">
+</div>
         <Carousel.Caption>
         <section className="cd-intro">
         <div className="section">
@@ -33,13 +33,12 @@ const Home = () => {
         <div className="hero-shadow"></div>
       </Carousel.Item>
       <Carousel.Item className="carousel-all carousel-item-two">
-      <div className="col-lg-6 text-center text-lg-end overflow-hidden">
-        <img 
+      <img 
         className="img-fluid"
         src="./assets/img/bgpizza3.png"
         alt="pizzafloat2"
         />
-        </div>
+      <div className="col-lg-6 text-center text-lg-end overflow-hidden"> </div>
         <Carousel.Caption>
         <section className="cd-intro">
         <div className="section">
