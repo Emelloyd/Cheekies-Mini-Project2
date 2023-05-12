@@ -44,13 +44,11 @@ render () {
   
       <div>
         <Menu fixed="top" borderless id ='navbar'>
-        <div className="container">
         <Menu.Item id='navbar-total' position='right'>
             <FaPizzaSlice className='cart'/>
             {formatPrice(this.props.orderTotal)}
             {this.props.children}
         </Menu.Item>
-        </div>
         </Menu>
       </div>
       </div>

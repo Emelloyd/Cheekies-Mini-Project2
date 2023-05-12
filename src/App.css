@@ -46,10 +46,9 @@ body {
 
 .footer{
   height: 5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display:flex;
+  flex-direction: row;
+  justify-content:first baseline;
   background: white;
   text-align: center;
   color: black;
@@ -102,9 +101,10 @@ body {
 .img-fluid{
   display: flex;
 }
-.ContactForm {
+.contact-us{
   background-color: #a70b25;
   border-radius: 20px;
+  display: flex;
 }
   .contact-background-image {
     background-image: url("./assets/pizza3.jpg");
