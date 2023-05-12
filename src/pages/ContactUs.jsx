@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/Form';
 
 function ContactUs(){
     return(
-        <section className='contact-us'>
+        <section className='contact-us' >
         <div className='contact-background-image' id='hero-shadow'>
         <div className="my-5 px-4">
             <h1 className="fw-bold h-font text-center fw-bold text-danger">Get in touch with us!</h1>

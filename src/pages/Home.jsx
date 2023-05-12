@@ -61,7 +61,6 @@ const Home = () => {
             </Link>
           </section>
         </Carousel.Caption>
-        <div className="hero-shadow"></div>
       </Carousel.Item>
     </Carousel>
 

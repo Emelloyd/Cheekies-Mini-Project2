@@ -91,9 +91,7 @@ p {
 .carousel-item-one {
   background-image: url("../../assets/pizza1.jpg");
 }
-.img-fluid {
-    transform: rotate(360deg);
-}
+
 
 .carousel-item-two {
   background-image: url("../../assets/pizza2.jpg");
@@ -103,6 +101,7 @@ p {
 }
 
 .img-fluid{
+  transform: rotate(360deg);
   width: 30;
 }
 @media (prefers-reduced-motion: no-preference) {

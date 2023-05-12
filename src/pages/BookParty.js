@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/Form';
 
 const BookParty = () => {
   return (
-<section className='contact-us'>
+<div className='contact-us'>
         <div className='contact-background-image1'>
         <div className="my-5 px-4">
             <h2 className="text-center text-success mt-3">Cheekies Book A Party</h2>
@@ -48,7 +48,7 @@ const BookParty = () => {
                 </div>
               </div>
             </div>
-        </section>
+        </div>
   )
 }
 
