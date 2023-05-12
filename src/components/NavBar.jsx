@@ -2,8 +2,9 @@ import { Link } from "react-router-dom";
 import React, { Component } from 'react';
 import Proptypes from 'prop-types';
 import { Menu } from 'semantic-ui-react';
-import { formatPrice } from '../helpers';
-import {FaPizzaSlice} from 'react-icons/fa';
+
+import { FaPizzaSlice } from 'react-icons/fa';
+import { formatPrice } from "../helpers";
 
 const menus = [
     {label:"Home", path: '/'},
@@ -35,7 +36,7 @@ render () {
       </div>
         <div>
         <ul className="main-menu">
-          {menus.map((item)=><li>
+          {menus.map((item)=> <li>
           <Link to={item.path}>{item.label}</Link>
           </li>)}
         </ul>

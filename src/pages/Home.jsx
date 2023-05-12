@@ -18,16 +18,11 @@ const Home = () => {
 </div>
         <Carousel.Caption>
         <section className="cd-intro">
-        <div className="section">
           <h1>The best <br/>
           quality ingredients</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Numquam, placeat doloribus sapiente, ab perspiciatis 
-            eligendi aspernatur reiciendis explicabo sint iste, 
-            ducimus tempore? Velit voluptatem rem voluptates, 
-            ratione id facere labore.</p>
+            Numquam, placeat doloribus sapiente.</p>
           <Link to='/menu' className="btn btn-danger py-sm-3 px-sm-5 me-3">ORDER NOW!</Link>
-          </div>
           </section>
         </Carousel.Caption>
         <div className="hero-shadow"></div>
@@ -41,12 +36,10 @@ const Home = () => {
       <div className="col-lg-6 text-center text-lg-end overflow-hidden"> </div>
         <Carousel.Caption>
         <section className="cd-intro">
-        <div className="section">
           <h1>The best <br/>
           quality ingredients</h1>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           <Link to='/menu' className="btn btn-danger">ORDER NOW!</Link>
-          </div>
           </section>
         </Carousel.Caption>
         <div className="hero-shadow"></div>
@@ -61,11 +54,11 @@ const Home = () => {
         </div>
         <Carousel.Caption>
         <section className="cd-intro">
-        <div className="section">
           <h1>Where Pizza <br/>Happen?</h1>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          <Link to='/menu' className="btn btn-danger">ORDER NOW!</Link>
-          </div>
+          <Link to='/menu' className="btn btn-danger">
+            ORDER NOW!
+            </Link>
           </section>
         </Carousel.Caption>
         <div className="hero-shadow"></div>
